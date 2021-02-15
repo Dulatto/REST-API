@@ -4,7 +4,7 @@ const {v4} = require('uuid')
 const app = express()
 
 let CONTACTS = [
-  {id: v4(), name: 'Владилен', value: '+7-921-100-20-30', marked: false}
+  {id: v4(), name: 'John', value: '+1-438-555-6677', marked: false}
 ]
 
 app.use(express.json())
@@ -26,7 +26,7 @@ app.post('/api/contacts', (req, res) => {
 // DELETE
 app.delete('/api/contacts/:id', (req, res) => {
   CONTACTS = CONTACTS.filter(c => c.id !== req.params.id)
-  res.status(200).json({message: 'Контакт был удален'})
+  res.status(200).json({message: 'Contact was deleted'})
 })
 
 // PUT
