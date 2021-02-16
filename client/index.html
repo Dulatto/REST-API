@@ -42,8 +42,8 @@
       <div class="card-body">
         <h5 class="card-title" :style="{color: contact.marked ? 'red' : 'black'}">{{contact.name}}</h5>
         <p class="card-text">{{contact.value}}</p>
-        <button class="btn btn-primary" @click="markContact(contact.id)" :disabled="contact.marked">Highlight</button>
-        <button class="btn btn-danger" @click="removeContact(contact.id)">Delete</button>
+        <button class="btn btn-primary btn-sm" @click="markContact(contact.id)" :disabled="contact.marked">Highlight</button>
+        <button class="btn btn-danger btn-sm" @click="removeContact(contact.id)">Delete</button>
       </div>
     </div>
   </div>
