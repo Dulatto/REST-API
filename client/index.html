@@ -11,12 +11,16 @@
     [v-cloak] {
       display: none;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    body{
+      font-family: 'Raleway', sans-serif;
+    }
   </style>
 </head>
 <body>
 
 <div class="container pt-3" id="app" v-cloak>
-  <h1>REST API</h1>
+  <h1 class="bg-light p-2">REST API</h1>
 
   <form class="form-inline mb-3" @submit.prevent="createContact">
     <div class="form-group mr-5">
